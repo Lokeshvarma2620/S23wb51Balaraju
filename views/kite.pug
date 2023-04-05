@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1= title
-  - let kite = [{kite_color:"Black",kite_length:"40cms",kite_breadth:"30cms", kite_cost:"$30", },{kite_color:"White",kite_length:"30cms",kite_breadth:"30cms", kite_cost:"$25"},{kite_color:"Blue",kite_length:"10cms",kite_breadth:"15cms",  kite_cost:"$20"}]
+  - let  = [{kite_color:"Black",kite_length:"vertical",kite_breadth:"horizontal", kite_cost:"$30", },{kite_color:"White",kite_length:"vertical",kite_breadth:"horizontal", kite_cost:"$25"},{kite_color:"Blue",kite_length:"horizontal",kite_breadth:"vertical",  kite_cost:"$20"}]
   div(class="container-fluid")
     div(class="row")
       each a,index in kite
