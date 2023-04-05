@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var kiteRouter = require('./routes/kite');
 var boardRouter = require('./routes/board');
-var SelectorRouter = require('./routes/selector');s
+var SelectorRouter = require('./routes/selector');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
