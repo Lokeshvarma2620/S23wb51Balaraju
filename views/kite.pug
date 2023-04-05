@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  - let results = [{kite_color:"Black",kite_length:"40cms",kite_breadth:"30cms", kite_cost:"$30", },{kite_color:"White",kite_length:"30cms",kite_breadth:"30cms", kite_cost:"$25"},{kite_color:"Blue",kite_length:"10cms",kite_breadth:"15cms",  kite_cost:"$20"}]
+  div(class="container-fluid")
+    div(class="row")
+      each item,index in results
+        div(class="col-sm-2",onClick=`buy(${index})`)
+          p Color is #{item.Car_color}
+          p Model is #{item.Car_model}
+          p Title is #{item.Car_Title}
+          p Mileage is #{item.Car_mileage}
+          p Cost is #{item.Car_cost}
+          //- Bonus Logic
+  script.
+    function buy(thing) {
+      thing = thing+1;
+      alert(`You Purchased Item ${thing}`);
+    }
