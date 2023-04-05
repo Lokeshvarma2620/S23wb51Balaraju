@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var kiteRouter = require('./routes/kite');
 var boardRouter = require('./routes/board');
+var selectorRouter = require('./routes/selector');
 
 
 var app = express();
@@ -26,6 +27,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/kite', kiteRouter);
 app.use('/board', boardRouter);
+app.use('/selector', selectorRouter);
+
 
 
 
