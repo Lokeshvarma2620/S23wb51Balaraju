@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var carRouter = require('./routes/car');
+var kiteRouter = require('./routes/kite');
 var boardRouter = require('./routes/board');
 var SelectorRouter = require('./routes/selector');s
 
@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/kite', carRouter);
+app.use('/kite', kiteRouter);
 app.use('/board', boardRouter);
 app.use('/Selector', SelectorRouter);
 
