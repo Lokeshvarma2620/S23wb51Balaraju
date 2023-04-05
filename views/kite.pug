@@ -5,8 +5,8 @@ block content
   - let kite = [{kite_color:"Black",kite_shape:"vertical", kite_cost:"$30", },{kite_color:"White",kite_shape:"vertical", kite_cost:"$25"},{kite_color:"Blue",kite_shape:"horizontal", kite_cost:"$20"}]
   div(class="container-fluid")
     div(class="row")
-      each a,index in kite
-        div(class="col-sm-2",onClick=`buy(${index})`#{b.kite_color}, #{b.kite_shape}, #{b.kite_cost}
+      each b ,index in kite
+        div(class="col-sm-2" onClick= `buy(${index})`)#{b.kite_color}, #{b.kite_shape}, #{b.kite_cost}
           p Color is #{item.kite_color}
           p shape  is #{item.kite_shape}
           p Cost is #{item.kite_cost}
