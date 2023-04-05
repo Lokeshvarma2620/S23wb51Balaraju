@@ -7,11 +7,10 @@ block content
     div(class="row")
       each item,index in results
         div(class="col-sm-2",onClick=`buy(${index})`)
-          p Color is #{item.Car_color}
-          p Model is #{item.Car_model}
-          p Title is #{item.Car_Title}
-          p Mileage is #{item.Car_mileage}
-          p Cost is #{item.Car_cost}
+          p Color is #{item.kite_color}
+          p Model is #{item.kite_length}
+          p Title is #{item.kite_breadth}
+          p Cost is #{item.kite_cost}
           //- Bonus Logic
   script.
     function buy(thing) {
